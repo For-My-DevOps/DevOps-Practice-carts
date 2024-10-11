@@ -63,7 +63,11 @@ java -jar target/carts.jar
 ```
 
 
-# Build
+# Build Tools
+
+Maven: 3.8 
+JDK Version : 21  
+JDK Recommendation: JDK 21 provided by Eclipse Temurin (the open-source JDK distribution by the Eclipse Foundation)
 
 
 ## Java
