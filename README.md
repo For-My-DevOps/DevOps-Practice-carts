@@ -11,7 +11,7 @@ Checkout the API Spec [here](http://microservices-demo.github.io/api/index?url=h
 
 # Creating a dev environment
 
-Platform : Ubuntu 16.04  
+Platform : Ubuntu 24.04
 
 Setup Mongo DB
 ```
@@ -71,6 +71,8 @@ java -jar target/carts.jar
 `mvn -DskipTests package`
 
 ## Docker
+
+Base Image for Docker Builds =>  maven:3.8-eclipse-temurin-21-alpine  
 
 `GROUP=weaveworksdemos COMMIT=test ./scripts/build.sh`
 
