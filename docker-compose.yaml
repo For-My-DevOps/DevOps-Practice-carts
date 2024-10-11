@@ -1,0 +1,24 @@
+services:
+  carts-db:
+    image: mongo
+    container_name: carts-db
+    restart: always
+    networks:
+      - carts-network
+
+  carts:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: carts
+    restart: always
+    ports:
+      - "8888:8080"
+    depends_on:
+      - carts-db
+    networks:
+      - carts-network
+
+networks:
+  carts-network:
+    driver: bridge
